@@ -1,12 +1,22 @@
-# WRK-Docker 
 
-[Docker](https://hub.docker.com/repository/docker/msterhuj/wrk)
-[WRK source](https://github.com/wg/wrk)
+# WRK-Docker [![Build Status](https://travis-ci.org/msterhuj/WRK-Docker.svg?branch=master)](https://travis-ci.org/msterhuj/WRK-Docker)
 
+## Configuration
+
+- Alpine
+- libc-dev perl linux-headers
+- wrk
+
+## Build yourself
+    
+    $ git clone https://github.com/msterhuj/WRK-Docker.git
+    $ cd WRK-Docker
+    $ docker build -r <yourName>/<dockerName>:<> .
+    
 ## Usage
 
-    docker run msterhuj/wrk:1.0 <options>
-
+	$ docker run msterhuj/wrk:1.0 <options>
+	
 ## Command Line Options
 
     -c, --connections: total number of HTTP connections to keep open with
@@ -24,13 +34,13 @@
 
         --timeout:     record a timeout if a response is not received within
                        this amount of time.
-
+    
 ## Example Usage
 
-    docker run msterhuj/wrk:1.0 -t12 -c400 -d30s http://127.0.0.1:8080/index.html
-
-  This runs a benchmark for 30 seconds, using 12 threads, and keeping
-  400 HTTP connections open.
+	$ docker run msterhuj/wrk:1.0 -t12 -c400 -d30s http://127.0.0.1:8080/index.html
+   
+This runs a benchmark for 30 seconds, using 12 threads, and keeping
+400 HTTP connections open.
 
   Output:
 
@@ -42,3 +52,8 @@
       22464657 requests in 30.00s, 17.76GB read
     Requests/sec: 748868.53
     Transfer/sec:    606.33MB
+ 
+
+## Credit
+
+[WRK source](https://github.com/wg/wrk)
