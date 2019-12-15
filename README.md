@@ -1,5 +1,5 @@
 
-# WRK-Docker [![Build Status](https://travis-ci.org/msterhuj/WRK-Docker.svg?branch=master)](https://travis-ci.org/msterhuj/WRK-Docker)
+# WRK-Docker [![Build Status](https://api.travis-ci.org/msterhuj/WRK-Docker.svg?branch=master)](https://github.com/msterhuj/WRK-Docker)
 
 ## Configuration
 
