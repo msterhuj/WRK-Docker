@@ -1,5 +1,5 @@
 FROM alpine
-LABEL MAINTAINER="gabin.lanore@storais.org"
+LABEL MAINTAINER="gabin.lanore@gmail.com"
 
 ENV PATH="/data:${PATH}"
 
